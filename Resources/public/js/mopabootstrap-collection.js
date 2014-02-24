@@ -97,7 +97,7 @@
                 }
 
                 $(window).triggerHandler('before-remove.mopa-collection-item', [$collection, row, oldIndex]);
-                row.remove();
+                $(row).remove();
                 $(window).triggerHandler('remove.mopa-collection-item', [$collection, row, oldIndex]);
             }
         },
